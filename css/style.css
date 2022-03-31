@@ -1,0 +1,172 @@
+/* Палитра
+ФОНЫ
+Цвет шапки фона: #FFFFFF 
+Доп цвет заднего фона: #F5F4FA
+Цвет подвала: #2F303A
+ТЕКСТ
+Основной цвет: #757575
+Дополнительный цвет: #2196F3
+Дополнительный цвет: #212121
+*/
+:root{
+    /* Цвета текста */
+    --primary-text-color: #757575;
+    --additional-text-color: #212121;
+    --hover-text-color: #2196F3; 
+    /* Цвета фона */
+    --primary-background-color: #FFFFFF;
+    --additional-background-color: #F5F4FA;
+    --footer-background-color:#2F303A;
+}
+body{
+    background-color:var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+
+}
+/* Шапка */
+.logo{
+    color: var(--additional-text-color);
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.site-nav .nav-link{
+    color: var(--additional-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.address-link{
+    font-style: normal;
+}
+.contacts-nav .contacts-link{
+    color:var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-style: normal;
+
+}
+.main-text-section{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.order-section-button{
+    color:var(--primary-background-color);
+    background-color: var(--hover-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    font-family: inherit;
+}
+.sorting-button-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.section-list-header{
+    text-transform: uppercase;
+}
+.section-header{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+.example-link{
+    text-decoration: none;
+    color:var(--primary-text-color);
+}
+.example-header{
+    color:var(--additional-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+.example-paragraph{
+    font-size: 16px;
+    line-height: 1.18;
+    text-decoration: none;
+}
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus,
+.contacts-nav .contacts-link:hover,
+.contacts-nav .contacts-link:focus,
+.contacts-nav .address-link:hover,
+.contacts-nav .address-link:focus
+{
+    color:var(--hover-text-color);
+}
+button{
+background-color:var(--additional-background-color);
+color: var(--additional-text-color);
+border: none;
+font-family: inherit;
+}
+button:hover,
+button:focus{
+    background-color:var(--hover-text-color);
+    color:var(--primary-background-color);
+    cursor: pointer;
+}
+.hide-text{
+    display: none;
+}
+.section-list,
+.example-list
+{
+    list-style: none;
+}
+.section-link{
+    text-decoration: none;
+} 
+.section-title{
+    color:var(--additional-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+}
+/* .hide-text{
+} */
+.company-name-word{
+    color:var(--hover-text-color);
+}
+.order-section,
+.footer-section{
+    background-color: var(--footer-background-color);
+    font-weight: normal;
+}
+.footer-link{
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+.section-title-text{
+    font-size: 16px;
+    line-height: 1.18;
+}
+.main-text-section{
+    color:  var(--primary-background-color);
+}
+.team-section{
+    background-color: var(--additional-background-color);
+}
+.address-link{
+    color:  var(--primary-background-color);
+}
+.studio-header{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
