@@ -20,7 +20,7 @@
 
   <body>
     <!-- Шапка -->
-    <header class="section">
+    <header class="section-header">
       <div class="container">
         <a href="index.html" class="section-link logo">
           <span class="company-name-word">Web</span>Studio</a
@@ -29,13 +29,17 @@
         <nav>
           <!-- Список навигации сайта -->
           <ul class="site-nav section-list">
-            <li><a href="" class="nav-link section-link">Студия</a></li>
-            <li>
+            <li class="site-nav-item">
+              <a href="" class="nav-link section-link">Студия</a>
+            </li>
+            <li class="site-nav-item">
               <a href="portfolio.html" class="nav-link section-link"
                 >Портфолио</a
               >
             </li>
-            <li><a href="" class="nav-link section-link">Контакты</a></li>
+            <li class="site-nav-item">
+              <a href="" class="nav-link section-link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <!-- Список навигации контактов -->
@@ -56,6 +60,7 @@
       </div>
     </header>
     <main>
+      <!-- Герой -->
       <section class="order-section section">
         <div class="container">
           <h1 class="main-text-section">
@@ -64,9 +69,10 @@
           <a class="order-section-button" href="">Заказать услугу</a>
         </div>
       </section>
+      <!-- Краткая информация -->
       <section class="section">
         <div class="container">
-          <h2 class="hide-text">Краткая информация</h2>
+          <h2 class="visually-hidden">Краткая информация</h2>
           <ul class="section-list">
             <li>
               <h3 class="section-title section-list-header">
@@ -103,6 +109,7 @@
           </ul>
         </div>
       </section>
+      <!-- Чем мы занимаемся -->
       <section class="section">
         <div class="container">
           <h2 class="section-title section-header studio-header">
@@ -133,6 +140,7 @@
           </ul>
         </div>
       </section>
+      <!-- Наша команда -->
       <section class="team-section section">
         <div class="container">
           <h2 class="section-title section-header studio-header">
@@ -179,10 +187,11 @@
         </div>
       </section>
     </main>
-    <footer class="footer-section section">
+    <!-- Подвал -->
+    <footer class="footer-section">
       <div class="container">
-        <a href="" class="section-link logo"
-          ><span class="company-name-word">Web</span>Studio</a
+        <a href="" class="section-link logo footer"
+          ><span class="company-name-word footer-logo">Web</span>Studio</a
         >
         <address>
           <ul class="contacts-nav section-list">

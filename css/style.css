@@ -1,3 +1,6 @@
+* {
+    outline: 2px solid tomato;
+}
 /* Палитра
 ФОНЫ
 Цвет шапки фона: #FFFFFF 
@@ -8,75 +11,135 @@
 Дополнительный цвет: #2196F3
 Дополнительный цвет: #212121
 */
-/* *{
-    outline: 2px solid tomato;
-} */
-h1,h2,h3,h4,h5,h6,p,ul{
-    margin: 0px;
-    padding: 0px;;
-}
-.container{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-    width: 1200px;
-}
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-:root{
+/* Переменные */
+:root {
     /* Цвета текста */
     --primary-text-color: #757575;
     --additional-text-color: #212121;
-    --hover-text-color: #2196F3; 
+    --hover-text-color: #2196F3;
     /* Цвета фона */
     --primary-background-color: #FFFFFF;
     --additional-background-color: #F5F4FA;
-    --footer-background-color:#2F303A;
+    --footer-background-color: #2F303A;
+    --border-header-color: #ECECEC;
 }
-body{
-    background-color:var(--primary-background-color);
+/* Общее */
+body {
+    background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.18;
     letter-spacing: 0.03em;
 }
-/* Шапка */
-.logo{
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+button {
+    background-color: var(--additional-background-color);
     color: var(--additional-text-color);
-    font-family: 'Raleway',sans-serif;
+    border: none;
+    font-family: inherit;
+}
+button:hover,
+button:focus {
+    background-color: var(--hover-text-color);
+    color: var(--primary-background-color);
+    cursor: pointer;
+}
+/* Контейнеры */
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    width: 1200px;
+}
+.section {
+    padding: 94px 0;
+}
+/* Помогалка */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* Шапка & Футер*/
+.section-header{
+    border-bottom: 1px solid var(--border-header-color);
+}
+.logo {
+    color: var(--additional-text-color);
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 }
-.site-nav .nav-link{
+.site-nav .nav-link {
     color: var(--additional-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.address-link{
+.site-nav {
+    display: flex;
+}
+.site-nav .site-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus,
+.contacts-nav .contacts-link:hover,
+.contacts-nav .contacts-link:focus,
+.contacts-nav .address-link:hover,
+.contacts-nav .address-link:focus {
+    color: var(--hover-text-color);
+}
+.address-link {
     font-style: normal;
 }
-.contacts-nav .contacts-link{
-    color:var(--primary-text-color);
+.contacts-nav .contacts-link {
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-style: normal;
-
 }
-.main-text-section{
+.footer-section {
+    background-color: var(--footer-background-color);
+    font-weight: normal;
+    padding: 60px 0;
+}
+.footer-link {
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+/* Герой */
+.order-section{
+    text-align: center;
+}
+.main-text-section {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 45px;
 }
 .order-section-button{
     display: inline-block;
@@ -89,7 +152,8 @@ body{
     font-family: inherit;
     padding: 10px 32px;
     text-decoration: none;
-    min-width:136px;
+    text-align: center;
+    min-width:200px;
     border-radius: 4px;
 }
 .sorting-button-text{
@@ -99,6 +163,7 @@ body{
 }
 .section-list-header{
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .section-header{
     font-weight: 700;
@@ -122,30 +187,6 @@ body{
     line-height: 1.18;
     text-decoration: none;
 }
-.site-nav .nav-link:hover,
-.site-nav .nav-link:focus,
-.contacts-nav .contacts-link:hover,
-.contacts-nav .contacts-link:focus,
-.contacts-nav .address-link:hover,
-.contacts-nav .address-link:focus
-{
-    color:var(--hover-text-color);
-}
-button{
-background-color:var(--additional-background-color);
-color: var(--additional-text-color);
-border: none;
-font-family: inherit;
-}
-button:hover,
-button:focus{
-    background-color:var(--hover-text-color);
-    color:var(--primary-background-color);
-    cursor: pointer;
-}
-.hide-text{
-    display: none;
-}
 .section-list,
 .example-list
 {
@@ -159,21 +200,10 @@ button:focus{
     font-size: 16px;
     line-height: 1.18;
 }
-/* .hide-text{
-} */
 .company-name-word{
     color:var(--hover-text-color);
 }
 .order-section,
-.footer-section{
-    background-color: var(--footer-background-color);
-    font-weight: normal;
-}
-.footer-link{
-    font-size: 14px;
-    line-height: 1.71;
-    text-decoration: none;
-}
 .section-title-text{
     font-size: 16px;
     line-height: 1.18;
