@@ -8,6 +8,24 @@
 Дополнительный цвет: #2196F3
 Дополнительный цвет: #212121
 */
+/* *{
+    outline: 2px solid tomato;
+} */
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0px;
+    padding: 0px;;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    width: 1200px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 :root{
     /* Цвета текста */
     --primary-text-color: #757575;
@@ -25,7 +43,6 @@ body{
     font-size: 14px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-
 }
 /* Шапка */
 .logo{
@@ -62,6 +79,7 @@ body{
     text-transform: uppercase;
 }
 .order-section-button{
+    display: inline-block;
     color:var(--primary-background-color);
     background-color: var(--hover-text-color);
     font-weight: 700;
@@ -69,6 +87,10 @@ body{
     line-height: 1.88;
     letter-spacing: 0.06em;
     font-family: inherit;
+    padding: 10px 32px;
+    text-decoration: none;
+    min-width:136px;
+    border-radius: 4px;
 }
 .sorting-button-text{
     font-weight: 500;
