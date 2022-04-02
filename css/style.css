@@ -25,12 +25,13 @@
 }
 /* Общее */
 body {
-    background-color: var(--primary-background-color);
-    color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
 }
 h1,h2,h3,h4,h5,h6,p,ul{
     margin: 0px;
@@ -42,16 +43,18 @@ img {
     height: auto;
 }
 button {
-    background-color: var(--additional-background-color);
-    color: var(--additional-text-color);
     border: none;
     font-family: inherit;
+
+    background-color: var(--additional-background-color);
+    color: var(--additional-text-color);
 }
 button:hover,
 button:focus {
+    cursor: pointer;
+
     background-color: var(--hover-text-color);
     color: var(--primary-background-color);
-    cursor: pointer;
 }
 /* Контейнеры */
 .container{
@@ -79,20 +82,47 @@ button:focus {
 /* Шапка & Футер*/
 .section-header{
     border-bottom: 1px solid var(--border-header-color);
+
+}
+.nav-header-container{
+    display: flex;
+}
+.company-name-word {
+    color: var(--hover-text-color);
+}
+
+.order-section,
+.section-title-text {
+    font-size: 16px;
+    line-height: 1.18;
+}
+.contacts-nav-header{
+    display: flex;
+}
+.contacts-nav .contacts-nav-item + .contacts-nav-item{
+    margin-left: 50px;
+}
+.main-text-section {
+    color: var(--primary-background-color);
 }
 .logo {
-    color: var(--additional-text-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+
+    color: var(--additional-text-color);
 }
 .site-nav .nav-link {
-    color: var(--additional-text-color);
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
+    padding-top: 32px;
+
+    color: var(--additional-text-color);
 }
 .site-nav {
     display: flex;
@@ -112,22 +142,27 @@ button:focus {
     font-style: normal;
 }
 .contacts-nav .contacts-link {
-    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-style: normal;
+
+    color: var(--primary-text-color);
 }
 .footer-section {
-    background-color: var(--footer-background-color);
     font-weight: normal;
     padding: 60px 0;
+
+    background-color: var(--footer-background-color);
 }
 .footer-link {
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
+}
+.address-link {
+    color: var(--primary-background-color);
 }
 /* Герой */
 .order-section{
@@ -143,18 +178,21 @@ button:focus {
 }
 .order-section-button{
     display: inline-block;
-    color:var(--primary-background-color);
-    background-color: var(--hover-text-color);
+    padding: 10px 32px;
+    min-width:200px;
+    border-radius: 4px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     font-family: inherit;
-    padding: 10px 32px;
+    
     text-decoration: none;
     text-align: center;
-    min-width:200px;
-    border-radius: 4px;
+
+    color:var(--primary-background-color);
+    background-color: var(--hover-text-color);
 }
 .sorting-button-text{
     font-weight: 500;
@@ -165,22 +203,19 @@ button:focus {
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.section-header{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-}
 .example-link{
     text-decoration: none;
+
     color:var(--primary-text-color);
 }
 .example-header{
-    color:var(--additional-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     text-decoration: none;
+
+    color:var(--additional-text-color);
 }
 .example-paragraph{
     font-size: 16px;
@@ -196,28 +231,15 @@ button:focus {
     text-decoration: none;
 } 
 .section-title{
+    font-size: 16px;
+    line-height: 1.18;
+
     color:var(--additional-text-color);
-    font-size: 16px;
-    line-height: 1.18;
-}
-.company-name-word{
-    color:var(--hover-text-color);
-}
-.order-section,
-.section-title-text{
-    font-size: 16px;
-    line-height: 1.18;
-}
-.main-text-section{
-    color:  var(--primary-background-color);
 }
 .team-section{
     background-color: var(--additional-background-color);
 }
-.address-link{
-    color:  var(--primary-background-color);
-}
-.studio-header{
+.studio-header {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
