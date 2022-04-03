@@ -198,9 +198,7 @@ margin-right: 8px;
     color: var(--primary-background-color);
 }
 /* Герой */
-.order-section{
-    background-color: var(--footer-background-color);
-}
+
 .order-section>.container{
     text-align: center;
     padding-top: 200px;
