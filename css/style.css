@@ -86,6 +86,7 @@ button:focus {
 }
 .nav-header-container{
     display: flex;
+    align-items: center;
 }
 .company-name-word {
     color: var(--hover-text-color);
@@ -98,6 +99,14 @@ button:focus {
 }
 .contacts-nav-header{
     display: flex;
+    margin-left: auto;
+}
+.example-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.example-container-item{
+    width: 370px;
 }
 .contacts-nav .contacts-nav-item + .contacts-nav-item{
     margin-left: 50px;
@@ -126,9 +135,13 @@ button:focus {
 }
 .site-nav {
     display: flex;
+    margin-left: 92px;
 }
 .site-nav .site-nav-item:not(:last-child) {
     margin-right: 50px;
+}
+.contacts-nav .footer-nav-item:not(:last-child){
+    margin-bottom: 9px;
 }
 .site-nav .nav-link:hover,
 .site-nav .nav-link:focus,
@@ -156,6 +169,12 @@ button:focus {
 
     background-color: var(--footer-background-color);
 }
+.section-link.logo.footer{
+    display:inline-block;
+    margin-bottom: 31px;
+
+    color:var(--primary-background-color);
+}
 .footer-link {
     font-size: 14px;
     line-height: 1.71;
@@ -167,6 +186,8 @@ button:focus {
 /* Герой */
 .order-section{
     text-align: center;
+    background-color: var(--footer-background-color);
+    padding-top: 200px;
 }
 .main-text-section {
     font-weight: 900;
@@ -179,6 +200,7 @@ button:focus {
 .order-section-button{
     display: inline-block;
     padding: 10px 32px;
+    margin-bottom: 200px;
     min-width:200px;
     border-radius: 4px;
 
@@ -207,6 +229,12 @@ button:focus {
     text-decoration: none;
 
     color:var(--primary-text-color);
+}
+.about-container{
+    display: flex;
+}
+.about-container-list{
+    display: inline-block;
 }
 .example-header{
     font-weight: 700;
