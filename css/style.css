@@ -269,6 +269,9 @@ margin-right: 30px;
     margin: 0;
     text-align: center;
 }
+.team-section-item{
+    background-color: var(--primary-background-color);
+}
 .section-sorting-item{
     padding: 6px 22px;
     border-radius: 4px;
@@ -332,7 +335,7 @@ margin-right: 30px;
 }
 .info{
     padding: 20px 24px;
-    border-right: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid var(--border-header-color);
+    border-left: 1px solid var(--border-header-color);
+    border-bottom: 1px solid var(--border-header-color);
 }
