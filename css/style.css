@@ -254,6 +254,7 @@ margin-right: 8px;
 }
 .team-section .team-section-list{
     display: flex;
+    list-style: none;
 }
 .team-section .team-section-item:not(:last-child) {
 margin-right: 30px;
