@@ -136,6 +136,9 @@ margin-right: 8px;
 
     color: var(--additional-text-color);
 }
+.nav-link.section-link.active-link{
+    color: var(--hover-text-color);
+}
 .site-nav .nav-link {
     display: block;
     font-weight: 500;
@@ -326,4 +329,10 @@ margin-right: 30px;
     line-height: 1.16;
     margin-bottom: 50px;
     text-align: center;
+}
+.info{
+    padding: 20px 24px;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
