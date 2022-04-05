@@ -127,7 +127,7 @@ margin-right: 8px;
 .main-text-section {
     color: var(--primary-background-color);
     max-width: 700px;
-    margin: auto;
+    margin: 0 auto;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
