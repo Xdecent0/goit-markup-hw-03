@@ -266,14 +266,20 @@ margin-right: 8px;
 .team-section .team-section-item:not(:last-child) {
 margin-right: 30px;
 }
-.team-section-item>.section-title{
-    padding-top: 30px;
+.person-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
     margin: 0;
     margin-bottom: 10px;
     text-align: center;
+    color: var(--additional-text-color);
 }
-.team-section-item>.section-title-text{
-    padding-bottom: 30px;
+.team-person-info{
+    padding:30px 0px;
+}
+.person-title-text{
     margin: 0;
     text-align: center;
 }
@@ -303,6 +309,9 @@ margin-right: 30px;
 }
 .about-container-list{
     display: inline-block;
+}
+.about-section{
+    padding-top:0px;
 }
 .example-header{
     font-weight: 700;
